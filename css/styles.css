@@ -2,9 +2,12 @@
 YOUR STYLES
 *******************/
 
+body {
+    background-image: url(../img/railroad.jpeg) no-repeat;
+}
+
 article {
     margin: 0 auto;
-    background: #ccc;
     padding: 3em;
 }
 
@@ -129,7 +132,7 @@ h1 {
   animation-name: rubberBand;
 }
 
-img:hover {
+article img:hover {
     animation: rubberBand 1s infinite;
 }
 
