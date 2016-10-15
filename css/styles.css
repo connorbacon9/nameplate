@@ -63,21 +63,36 @@ h1 {
 }
 
 h3 {
-    padding-top: 4em;
+    padding-top: .25em;
     text-align: center;
+    font-size: 1.9em;
 }
 
 p {
+    margin-top: 70px;
     text-align: center;
 }
 
-img {
+.facebook,
+.insta,
+.twitter {
+    height: 50px;
+    width: 50px;
+    background: white;
+    border-radius: 2.5em;
+}
+
+
+.me {
     height: 250px;
     width: 400px;
     margin: 0 auto;
     display: block;
     border-radius: .8em;
+    padding-top: em;
 }
+
+
 
 ul {
     padding: 0;
@@ -95,7 +110,10 @@ li {
 a {
   transition: color .4s;
   color: #265C83;
+    font-size: 1.20em;
 }
+
+
 
 a:link,
 a:visited { 
