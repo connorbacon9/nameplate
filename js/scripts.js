@@ -6,4 +6,4 @@ $('h1').lettering();
 
 // Make backstretch work
 
-$.backstretch('../img/sunrise.jpg');
+$.backstretch('../img/sunrise.png');
