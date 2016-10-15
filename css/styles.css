@@ -1,33 +1,125 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
+</style>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Anton');
+</style>
+
+
 /********************
 YOUR STYLES
 *******************/
 
 body {
-    background-image: url(../img/railroad.jpeg) no-repeat;
+    background-image: url(../img/sunrise.jpg) no-repeat;
 }
 
-article {
+.transbox {
     margin: 0 auto;
-    padding: 3em;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 25%;
+    padding-top: 0;
+    background-clip: content-box;
+    float: left;
+}
+
+
+
+
+
+article {
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0 auto;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    background: none;
+}
+
+.bg-color {
+     margin: 0 auto;
+    color: cornsilk;
+    background: rgba(0, 0, 0, 0.3);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border-radius: .75em;
 }
 
 h1 {
+    font-family: 'Anton', sans-serif;
+    padding-top: 2em;
     text-align: center;
-    font-size: 6em;
-    text-transform: uppercase;
+    font-size: 4em;
+    margin: 5px auto;
+    color: white;
+    animation: flipInX 1.5s;
 }
+
+h3 {
+    padding-top: 4em;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    height: 250px;
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+    border-radius: .8em;
+}
+
+ul {
+    padding: 0;
+    text-align: right;
+}
+
+li {
+    font-size: 1.15em;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+}
+
+a {
+  transition: color .4s;
+  color: #265C83;
+}
+
+a:link,
+a:visited { 
+    color: white; 
+    text-decoration: none;
+}
+a:hover   {
+    color: #4682b4;
+}
+a:active  {
+  transition: color .3s;
+  color: #007BE6;
+}
+
+.link { text-decoration: none; }
+
+
 
 
 /*FIRST FRAME*/
 .char1,
 .char8 {
-    font-size: 1.25em;
-    border-bottom: 20px solid #fff;
-    display: inline-block;
-    background: orange;
-    box-shadow: 0 0 10px white;
-    
-    transition: transform .5s;
+    font-size: 1.15em;
+    display: inline;
 }
 
 .char1 {
@@ -36,7 +128,7 @@ h1 {
 
 
 .char2 {
-    letter-spacing: -6px;
+    letter-spacing: -2px;
 }
 
 
@@ -53,87 +145,78 @@ h1 {
 
 /*KEYFRAME ANIMATION*/
 
-@-webkit-keyframes rubberBand {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
 
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
+@-webkit-keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
   }
 
   40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
 
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
   }
 
-  65% {
-    -webkit-transform: scale3d(.95, 1.05, 1);
-    transform: scale3d(.95, 1.05, 1);
-  }
-
-  75% {
-    -webkit-transform: scale3d(1.05, .95, 1);
-    transform: scale3d(1.05, .95, 1);
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
   }
 
   to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
   }
 }
 
-@keyframes rubberBand {
+@keyframes flipInX {
   from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
   }
 
   40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
 
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
   }
 
-  65% {
-    -webkit-transform: scale3d(.95, 1.05, 1);
-    transform: scale3d(.95, 1.05, 1);
-  }
-
-  75% {
-    -webkit-transform: scale3d(1.05, .95, 1);
-    transform: scale3d(1.05, .95, 1);
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
   }
 
   to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
   }
 }
 
-.rubberBand {
-  -webkit-animation-name: rubberBand;
-  animation-name: rubberBand;
-}
-
-article img:hover {
-    animation: rubberBand 1s infinite;
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
 }
 
 
@@ -143,15 +226,16 @@ MEDIA QUERIES
 
 /* Desktop */
 @media (min-width: 1200px) {
-
+   
 }
 
 /* Tablet */
 @media (min-width: 768px) {
 
+    
 }
 
 /* Mobile */
 @media (min-width: 480px) {
-
+ 
 }
