@@ -14,6 +14,10 @@ YOUR STYLES
 
 body {
     background-image: url(/nameplate/img/sunrise.png) no-repeat;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .transbox {
