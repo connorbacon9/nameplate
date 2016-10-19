@@ -27,10 +27,36 @@ body {
     padding-bottom: 25%;
     padding-top: 0;
     background-clip: content-box;
-    float: left;
+    position: absolute;
+    
 }
 
+.tiles {
+    margin: 850px auto;
+    padding-left: 27%;
+    padding-right: 25%;
+    padding-bottom: 25%;
+    display: block;
+}
 
+section {
+  background: rebeccapurple;
+  width: 200px;
+  border: 1px white dashed;
+  display: block;
+}
+
+.tall {
+  height: 400px;
+}
+
+.medium {
+  height: 300px;
+}
+
+.short {
+  height: 200px;
+}
 
 
 
@@ -91,9 +117,10 @@ p {
     height: 250px;
     width: 400px;
     margin: 0 auto;
-    display: block;
+    display: inline;
     border-radius: .8em;
     padding-top: em;
+    position: relative;
 }
 
 
