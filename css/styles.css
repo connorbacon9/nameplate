@@ -33,16 +33,13 @@ body {
 
 .tiles {
     margin: 850px auto;
-    padding-left: 20%;
-    padding-right: 5%;
-    padding-bottom: 5%;
+    width: 50%;
     display: block;
 }
 
 section {
-  background: rebeccapurple;
+  background: none;
   width: 175px;
-  border: 1px white dashed;
   display: block;
 }
 
@@ -72,7 +69,7 @@ article {
 }
 
 .bg-color {
-     margin: 0 auto;
+    margin: 0 auto;
     color: cornsilk;
     background: rgba(0, 0, 0, 0.3);
     padding-top: 10px;
