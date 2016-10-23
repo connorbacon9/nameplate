@@ -284,4 +284,36 @@ MEDIA QUERIES
 /* Mobile */
 @media (min-width: 480px) {
  
+    article {
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0 auto;
+    color: white;
+    padding-top: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 5px;
+    background: none;
+}
+
+.bg-color {
+    margin: 0 auto;
+    color: cornsilk;
+    background: rgba(0, 0, 0, 0.3);
+    padding-top: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 5px;
+    border-radius: .75em;
+}
+    .transbox {
+    margin: 0 auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 25%;
+    padding-top: 0;
+    background-clip: content-box;
+    position: absolute;
+    
+}
+    
 }
