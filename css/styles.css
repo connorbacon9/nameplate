@@ -315,5 +315,8 @@ MEDIA QUERIES
     position: absolute;
     
 }
+    .flipInX {
+        display: none;
+}
     
 }
