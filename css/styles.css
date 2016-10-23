@@ -292,13 +292,22 @@ MEDIA QUERIES
     }
     
     .me {
-        width: 375px;
+        width: 95%;
     }
 }
 
 /* Tablet */
 @media (max-width: 768px) {
 
+    .transbox {
+        padding-left: 0;
+        padding-right: 0;
+        position: static;
+    }
+    
+    .me {
+        width: 95%;
+    }
     
 }
 
