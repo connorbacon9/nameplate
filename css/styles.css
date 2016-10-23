@@ -316,7 +316,10 @@ MEDIA QUERIES
     
 }
     .flipInX {
-        display: none;
+  -webkit-backface-visibility: none !important;
+  backface-visibility: none !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
 }
     
 }
