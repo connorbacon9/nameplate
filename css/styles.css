@@ -12,6 +12,7 @@
 YOUR STYLES
 *******************/
 
+
 body {
     background-image: url(/nameplate/img/sunrise.png) no-repeat;
     -webkit-background-size: cover;
@@ -41,6 +42,14 @@ section {
   background: none;
   width: 175px;
   display: block;
+     float: left;
+  padding: 1em;
+}
+
+section:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .tall {
