@@ -279,20 +279,30 @@ a:active  {
 MEDIA QUERIES
 *******************/
 
-/* Desktop */
-@media (min-width: 1200px) {
-   
+
+
+
+/* Mobile */
+@media (max-width: 480px) {
+ 
+    .transbox {
+        padding-left: 0;
+        padding-right: 0;
+        position: static;
+    }
+    
+    .me {
+        width: 375px;
+    }
 }
 
 /* Tablet */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
     
 }
 
-/* Mobile */
-@media (min-width: 480px) {
- 
-
-    
+/* Desktop */
+@media (max-width: 1200px) {
+   
 }
